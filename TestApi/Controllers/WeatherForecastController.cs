@@ -29,6 +29,8 @@ namespace TestAPI.Controllers
 
 
             string a = "";
+
+
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
@@ -37,6 +39,8 @@ namespace TestAPI.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+
+
         }
     }
 }
